@@ -1,0 +1,4 @@
+com/auxenta/fileUploadApplication/UserInput.class
+com/auxenta/fileUploadApplication/Validation.class
+com/auxenta/fileUploadApplication/S3Util.class
+com/auxenta/fileUploadApplication/App.class

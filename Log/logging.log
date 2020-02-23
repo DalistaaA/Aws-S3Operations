@@ -1,0 +1,14 @@
+2020-02-16 15:04:46 ERROR com.auxenta.fileUploadApplication.Validation:23 - You passed more than or less than three inputs. You must provide three inputs only
+2020-02-16 15:04:46 INFO  com.auxenta.fileUploadApplication.App:14 - You passed more than or less than three inputs. You must provide three inputs only
+2020-02-16 15:04:46 ERROR com.auxenta.fileUploadApplication.Validation:29 - There is no file in that location. Please check your filepath
+2020-02-16 15:04:46 INFO  com.auxenta.fileUploadApplication.App:14 - There is no file in that location. Please check your filepath
+2020-02-16 15:04:46 ERROR com.auxenta.fileUploadApplication.Validation:29 - There is no file in that location. Please check your filepath
+2020-02-16 15:04:46 INFO  com.auxenta.fileUploadApplication.App:14 - There is no file in that location. Please check your filepath
+2020-02-16 15:04:50 INFO  com.auxenta.fileUploadApplication.S3Util:31 - Successfully Uploaded
+2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.S3Util:34 - The XML you provided was not well-formed or did not validate against our published schema (Service: Amazon S3; Status Code: 400; Error Code: MalformedXML; Request ID: 1185641A19232DA9; S3 Extended Request ID: 2kMJ39Z+LDlj1O0YyChxUA/25cwTqke2dt4K/yQcoM3roTtcywtVGe4+KT1rmUr0CstzKoQi+Cc=)
+2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.S3Util:34 - Unable to calculate MD5 hash:  (The system cannot find the path specified)
+2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.S3Util:34 - Unable to calculate MD5 hash:  (The system cannot find the path specified)
+2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.S3Util:34 - Unable to calculate MD5 hash:  (The system cannot find the path specified)
+2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.Validation:23 - You passed more than or less than three inputs. You must provide three inputs only
+2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.Validation:26 - You passed empty values. Please check your all three values are valid or not
+2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.Validation:29 - There is no file in that location. Please check your filepath
