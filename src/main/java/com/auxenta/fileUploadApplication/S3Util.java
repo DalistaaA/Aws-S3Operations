@@ -5,36 +5,46 @@ import java.io.File;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.AWSStaticCredentialsProvider;
-import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.regions.Regions;
-import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+import com.amazonaws.services.s3.model.DeleteObjectRequest;
 import com.amazonaws.services.s3.model.PutObjectRequest;
+import com.auxenta.fileUploadApplication.exception.BucketDoesNotExistException;
 
 public class S3Util {
 
 	private S3Util() {}
 	private static final Logger logger = LogManager.getLogger(S3Util.class);
-
-	static AWSCredentials awsCredentials = new BasicAWSCredentials("your key",
-			"your secret key");
-	static AmazonS3 s3client = AmazonS3ClientBuilder.standard()
-			.withCredentials(new AWSStaticCredentialsProvider(awsCredentials)).withRegion(Regions.AP_SOUTHEAST_1)
-			.build();
-	static boolean uploaded = false;
-
-	public static boolean uploadFile(String bucketName, String key, File sourceFile) {
+	
+	public static S3Response upload(S3Request s3Request) throws Exception {
 		try {
-			s3client.putObject(new PutObjectRequest(bucketName, key, sourceFile));
-			logger.info("Successfully Uploaded");
-			uploaded = true;
-		} catch (Exception e) {
-			logger.error(e.getMessage());
-			uploaded = false;
+			if (!AwsClient.getS3client().doesBucketExistV2(s3Request.getBucket())) {
+				throw new BucketDoesNotExistException("Bucket does not exist");
+			}
+			AwsClient.getS3client().putObject(buildPutObject(s3Request));
+			logger.info(S3Response.UPLOADED);
+		} catch (Exception ex) {
+			logger.error(ex.getMessage());
 		}
-		return uploaded;
+		return S3Response.UPLOADED;
+	}
+	
+	public static PutObjectRequest buildPutObject(S3Request s3Request) throws BucketDoesNotExistException {
+		if (!AwsClient.getS3client().doesBucketExistV2(s3Request.getBucket())) {
+			throw new BucketDoesNotExistException("Bucket does not exist");
+		}
+		return new PutObjectRequest(s3Request.getBucket(), s3Request.getKey(), new File(s3Request.getFilePath()));
 	}
 
+	public static S3Response delete(S3Request s3Request) {
+		AwsClient.getS3client().deleteObject(buildDeleteObject(s3Request));
+		logger.info(S3Response.DELETED);
+		return S3Response.DELETED;
+	}
+	
+	public static DeleteObjectRequest buildDeleteObject(S3Request s3Request) {
+		return new DeleteObjectRequest(s3Request.getBucket(), s3Request.getKey());
+	}
+	
+	public static boolean s3ObjectDoesExist (S3Request s3Request) {
+		return AwsClient.getS3client().doesObjectExist(s3Request.getBucket(), s3Request.getKey());
+	}
 }

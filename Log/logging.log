@@ -1,14 +1,278 @@
-2020-02-16 15:04:46 ERROR com.auxenta.fileUploadApplication.Validation:23 - You passed more than or less than three inputs. You must provide three inputs only
-2020-02-16 15:04:46 INFO  com.auxenta.fileUploadApplication.App:14 - You passed more than or less than three inputs. You must provide three inputs only
-2020-02-16 15:04:46 ERROR com.auxenta.fileUploadApplication.Validation:29 - There is no file in that location. Please check your filepath
-2020-02-16 15:04:46 INFO  com.auxenta.fileUploadApplication.App:14 - There is no file in that location. Please check your filepath
-2020-02-16 15:04:46 ERROR com.auxenta.fileUploadApplication.Validation:29 - There is no file in that location. Please check your filepath
-2020-02-16 15:04:46 INFO  com.auxenta.fileUploadApplication.App:14 - There is no file in that location. Please check your filepath
-2020-02-16 15:04:50 INFO  com.auxenta.fileUploadApplication.S3Util:31 - Successfully Uploaded
-2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.S3Util:34 - The XML you provided was not well-formed or did not validate against our published schema (Service: Amazon S3; Status Code: 400; Error Code: MalformedXML; Request ID: 1185641A19232DA9; S3 Extended Request ID: 2kMJ39Z+LDlj1O0YyChxUA/25cwTqke2dt4K/yQcoM3roTtcywtVGe4+KT1rmUr0CstzKoQi+Cc=)
-2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.S3Util:34 - Unable to calculate MD5 hash:  (The system cannot find the path specified)
-2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.S3Util:34 - Unable to calculate MD5 hash:  (The system cannot find the path specified)
-2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.S3Util:34 - Unable to calculate MD5 hash:  (The system cannot find the path specified)
-2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.Validation:23 - You passed more than or less than three inputs. You must provide three inputs only
-2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.Validation:26 - You passed empty values. Please check your all three values are valid or not
-2020-02-16 15:04:51 ERROR com.auxenta.fileUploadApplication.Validation:29 - There is no file in that location. Please check your filepath
+2020-02-20 14:11:31 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:11:32 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYour file does not exists. Please check your filepath
+2020-02-20 14:11:32 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 14:11:32 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:11:36 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The XML you provided was not well-formed or did not validate against our published schema (Service: Amazon S3; Status Code: 400; Error Code: MalformedXML; Request ID: 2937D10D33324E26; S3 Extended Request ID: 7WpyZT5Fdy/qwwAeFoH7FPYE+NU1Q7ndKRjrUvgWYDRXPMeu89mZclN8nAwMrAW7HPxqh6DFcOU=)
+2020-02-20 14:11:37 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The key parameter must be specified when uploading an object
+2020-02-20 14:11:37 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash:  (Result too large)
+2020-02-20 14:11:37 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash: test (The system cannot find the file specified)
+2020-02-20 14:11:37 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash:   (The system cannot find the path specified)
+2020-02-20 14:11:37 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The key parameter must be specified when uploading an object
+2020-02-20 14:11:38 INFO  com.auxenta.fileUploadApplication.S3Util:25 - UPLOADED:20200
+2020-02-20 14:11:38 INFO  com.auxenta.fileUploadApplication.S3Util:39 - DELETED:50100
+2020-02-20 14:19:18 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:19:18 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYour file does not exists. Please check your filepath
+2020-02-20 14:19:18 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 14:19:18 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:19:22 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The XML you provided was not well-formed or did not validate against our published schema (Service: Amazon S3; Status Code: 400; Error Code: MalformedXML; Request ID: D9F3F2E182455222; S3 Extended Request ID: rH1zpI9aPnfn3vF4eHlxMcZdnyip3ccsMLVr2KPyjdtgZWymZiLI7sv9t05xMhp3HCTBbwEUb3Y=)
+2020-02-20 14:19:23 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The key parameter must be specified when uploading an object
+2020-02-20 14:19:23 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash:  (Result too large)
+2020-02-20 14:19:23 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash: test (The system cannot find the file specified)
+2020-02-20 14:19:23 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash:   (The system cannot find the path specified)
+2020-02-20 14:19:23 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The key parameter must be specified when uploading an object
+2020-02-20 14:19:23 INFO  com.auxenta.fileUploadApplication.S3Util:25 - UPLOADED:20200
+2020-02-20 14:19:24 INFO  com.auxenta.fileUploadApplication.S3Util:39 - DELETED:50100
+2020-02-20 14:26:57 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:26:57 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYour file does not exists. Please check your filepath
+2020-02-20 14:26:57 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 14:26:57 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:27:01 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The XML you provided was not well-formed or did not validate against our published schema (Service: Amazon S3; Status Code: 400; Error Code: MalformedXML; Request ID: 6A7AF152DCD4EB24; S3 Extended Request ID: 0w2KPwz0vvSOL+zYWW6rA160UTQvDxWdtxLV+9lwkH67Z+Qs8d2E0fznb5ywFYchGPuI5HoxAhg=)
+2020-02-20 14:27:01 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The key parameter must be specified when uploading an object
+2020-02-20 14:27:01 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash:  (Result too large)
+2020-02-20 14:27:01 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash: test (The system cannot find the file specified)
+2020-02-20 14:27:01 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash:   (The system cannot find the path specified)
+2020-02-20 14:27:01 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The key parameter must be specified when uploading an object
+2020-02-20 14:27:02 INFO  com.auxenta.fileUploadApplication.S3Util:25 - UPLOADED:20200
+2020-02-20 14:27:02 INFO  com.auxenta.fileUploadApplication.S3Util:39 - DELETED:50100
+2020-02-20 14:32:59 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:32:59 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYour file does not exists. Please check your filepath
+2020-02-20 14:32:59 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 14:32:59 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:33:03 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The XML you provided was not well-formed or did not validate against our published schema (Service: Amazon S3; Status Code: 400; Error Code: MalformedXML; Request ID: 5BF853790421D001; S3 Extended Request ID: vbuIsqWugpZsf7mzAGU7zLv64SFEQndFuxPMBpYjmYETkJ6EIMsTc9CJMeaa2JqRKKzW/PsuBaE=)
+2020-02-20 14:33:03 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The key parameter must be specified when uploading an object
+2020-02-20 14:33:03 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash:  (Result too large)
+2020-02-20 14:33:03 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash: test (The system cannot find the file specified)
+2020-02-20 14:33:03 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000Unable to calculate MD5 hash:   (The system cannot find the path specified)
+2020-02-20 14:33:03 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The key parameter must be specified when uploading an object
+2020-02-20 14:33:04 INFO  com.auxenta.fileUploadApplication.S3Util:25 - UPLOADED:20200
+2020-02-20 14:33:04 INFO  com.auxenta.fileUploadApplication.S3Util:39 - DELETED:50100
+2020-02-20 14:37:02 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:38:04 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:38:21 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:38:43 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:38:53 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 14:39:03 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 14:39:28 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYou passed empty key Name. Please provide valid key Name . Where you want to upload file in Aws Bucket
+2020-02-20 14:39:42 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYour file does not exists. Please check your filepath
+2020-02-20 14:39:54 ERROR com.auxenta.fileUploadApplication.App:15 - Error OccurredYour file does not exists. Please check your filepath
+2020-02-20 14:40:32 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: ADA55587E9622206; S3 Extended Request ID: HKQ488KsPML/IBu17DGf0N0AEzDFrfp+8ffHb7l4AqQcULIjLrpxSyHeSODq4gADhK09ROKWGIQ=)
+2020-02-20 14:42:19 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: 432EEEEDE826AAC6; S3 Extended Request ID: j8jMYoeJUZF8TRkc6LomzxGCS9HPfGoqqGNlWXU117B0wm2T4Gx0gduy7NysANC6qy92/qZTqYU=)
+2020-02-20 14:44:01 ERROR com.auxenta.fileUploadApplication.S3Util:28 - ERROR:50000The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: DAAD18052B42A160; S3 Extended Request ID: iRAWWSeHVqgmMsSOieYZwTzF0HNv95dsGqB6iTJJFBmndSnVjo/UI9rlcbP08Nw+wkHu5Us2Ge0=)
+2020-02-20 14:44:15 INFO  com.auxenta.fileUploadApplication.S3Util:25 - UPLOADED:20200
+2020-02-20 14:45:53 ERROR com.auxenta.fileUploadApplication.S3Util:29 - ERROR:50000The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: 2DB2E988D7FBC30E; S3 Extended Request ID: 97nXeOWTz9zg0Vnd7rTJPJNPqqfMRfgk8DeEob8IEsvX0C7XaK1aiQB7wIN2krMREN6JqftiZLc=)
+2020-02-20 14:47:31 ERROR com.auxenta.fileUploadApplication.S3Util:28 - The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: 6EDDC5B50A821A69; S3 Extended Request ID: 621iowvkH9hEs11id+xqD/pKkX58eexjGW+LzMTRrZlSBPDTcbdhg/CNikJOLHB8zjhELJ+Qg1E=)
+2020-02-20 14:48:35 ERROR com.auxenta.fileUploadApplication.S3Util:28 - The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: 751DF09B71D23F7B; S3 Extended Request ID: xfK2u6GF7rQ50kMQPhFFieQrl3u3dk/J1IrKszRVF40CxquHY6VzhGqMtNHZdo6hxIWbdY6ya1E=)
+2020-02-20 14:51:00 ERROR com.auxenta.fileUploadApplication.S3Util:27 - The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: 90EBD55B3D9952B3; S3 Extended Request ID: UKO9mUobWixYJuo4TD1N0R0AFJNRD/K1ts8xBP3rufysGYfzwzByPQSk9Lf60EHh6GcIHSuZIbU=)
+2020-02-20 14:55:17 ERROR com.auxenta.fileUploadApplication.S3Util:27 - The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: 1DA8C244FE4888D9; S3 Extended Request ID: jqdUbBjCWcoLyigAhNPvadR0yjW1Ju1KphtqTAXpcZ801v1Ey/A6sVb3FW/QEFzKFLlWL6DjA6g=)
+2020-02-20 14:56:41 ERROR com.auxenta.fileUploadApplication.S3Util:27 - The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: 30F429AA4BA4F5F0; S3 Extended Request ID: YZE9IEe/sJVvKv9nX/EBgNOAiKfpKUVF4lka6nsFMy+0gWKdGFFA54dhijhGwT4fqeeH/wIx6Lg=)
+2020-02-20 14:57:03 INFO  com.auxenta.fileUploadApplication.S3Util:24 - UPLOADED:20200
+2020-02-20 14:58:51 ERROR com.auxenta.fileUploadApplication.S3Util:27 - The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: 9EC6053B5A45375F; S3 Extended Request ID: wl7mrZRO9pEZagt/kLMIUdwOqH9nMxA07KCwMu23yVtF/LZyTibolYOwZKt+iV/+23FTTUDKZwc=)
+2020-02-20 15:07:52 ERROR com.auxenta.fileUploadApplication.S3Util:27 - The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: 5406EEDD659D8CD2; S3 Extended Request ID: zAMXLTpXZtKo2UiAP+WnIuBIrpcXXCZ2Eyr47+UhM36TvYvJAjh/8uvr+MIHUY3+g4SNICrVNyI=)
+2020-02-20 15:08:03 INFO  com.auxenta.fileUploadApplication.S3Util:24 - UPLOADED:20200
+2020-02-20 15:11:26 ERROR com.auxenta.fileUploadApplication.S3Util:27 - Bucket does not exist
+2020-02-20 15:11:50 ERROR com.auxenta.fileUploadApplication.S3Util:27 - The specified bucket is not valid. (Service: Amazon S3; Status Code: 400; Error Code: InvalidBucketName; Request ID: 4C28976FA94D08FA; S3 Extended Request ID: jSh68/8LbIOfv97dtjIRkRkUGt9f2FZSATDsSsHg9rRwlW9+7LY4WME1XYvvqfoG9eshcgbA0HI=)
+2020-02-20 15:12:23 ERROR com.auxenta.fileUploadApplication.S3Util:27 - Bucket does not exist
+2020-02-20 15:12:57 ERROR com.auxenta.fileUploadApplication.S3Util:27 - The bucket is in this region: us-east-1. Please use this region to retry the request (Service: Amazon S3; Status Code: 301; Error Code: PermanentRedirect; Request ID: 751B9FA75F9C42E3; S3 Extended Request ID: GAnSVkfpSszd341/cbU/LvfJZflnIkPbKnqUoYvVqv+pilf1FEbjREd90T8EeQFztW4mIz+UWzQ=)
+2020-02-20 15:13:12 ERROR com.auxenta.fileUploadApplication.S3Util:27 - Bucket does not exist
+2020-02-20 15:16:04 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 16:21:14 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 16:21:14 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 16:21:14 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 16:21:14 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 16:47:42 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 16:47:42 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 16:47:42 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 16:47:42 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 16:47:46 ERROR com.auxenta.fileUploadApplication.S3Util:26 - The PutObjectRequest parameter must be specified when uploading an object
+2020-02-20 16:47:46 INFO  com.auxenta.fileUploadApplication.S3Util:41 - DELETED:50100
+2020-02-20 16:48:40 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 16:48:40 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 16:48:40 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 16:48:40 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 16:48:43 ERROR com.auxenta.fileUploadApplication.S3Util:26 - The PutObjectRequest parameter must be specified when uploading an object
+2020-02-20 16:48:43 INFO  com.auxenta.fileUploadApplication.S3Util:41 - DELETED:50100
+2020-02-20 16:52:20 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 16:52:20 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 16:52:20 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 16:52:20 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 16:52:23 ERROR com.auxenta.fileUploadApplication.S3Util:26 - The PutObjectRequest parameter must be specified when uploading an object
+2020-02-20 16:52:23 INFO  com.auxenta.fileUploadApplication.S3Util:41 - DELETED:50100
+2020-02-20 16:55:12 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 16:55:12 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 16:55:12 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 16:55:12 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 16:55:16 ERROR com.auxenta.fileUploadApplication.S3Util:26 - The PutObjectRequest parameter must be specified when uploading an object
+2020-02-20 16:55:16 INFO  com.auxenta.fileUploadApplication.S3Util:41 - DELETED:50100
+2020-02-20 17:10:22 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 17:10:22 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 17:10:22 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 17:10:22 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 17:10:25 INFO  com.auxenta.fileUploadApplication.S3Util:24 - UPLOADED:20200
+2020-02-20 17:10:26 INFO  com.auxenta.fileUploadApplication.S3Util:40 - DELETED:50100
+2020-02-20 17:12:01 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 17:12:01 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 17:12:01 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 17:12:01 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 17:12:04 INFO  com.auxenta.fileUploadApplication.S3Util:24 - UPLOADED:20200
+2020-02-20 17:12:04 INFO  com.auxenta.fileUploadApplication.S3Util:40 - DELETED:50100
+2020-02-20 17:12:39 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 17:12:39 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 17:12:39 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 17:12:39 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 17:12:43 INFO  com.auxenta.fileUploadApplication.S3Util:24 - UPLOADED:20200
+2020-02-20 17:12:43 INFO  com.auxenta.fileUploadApplication.S3Util:40 - DELETED:50100
+2020-02-20 17:14:37 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 17:14:37 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 17:14:37 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 17:14:37 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 17:14:41 INFO  com.auxenta.fileUploadApplication.S3Util:23 - UPLOADED:20200
+2020-02-20 17:14:41 INFO  com.auxenta.fileUploadApplication.S3Util:39 - DELETED:50100
+2020-02-20 17:21:10 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed more than or less than three inputs. You can provide three inputs only 
+ Such as ..... 
+ 1. Aws S3 Bucket Name 
+ 2. Key - File name -- You want to upload in Aws S3 Bucket. 
+ 3. Correct file path -- Which is the file you want to upload from your PC
+2020-02-20 17:21:10 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 17:21:10 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+You passed empty bucket Name. Please provide valid Bucket Name.
+2020-02-20 17:21:10 ERROR com.auxenta.fileUploadApplication.App:15 - Error Occurred
+Your file does not exists. Please check your filepath
+2020-02-20 17:21:14 INFO  com.auxenta.fileUploadApplication.S3Util:23 - UPLOADED:20200
+2020-02-20 17:21:14 INFO  com.auxenta.fileUploadApplication.S3Util:39 - DELETED:50100
+2020-02-20 17:48:11 ERROR com.auxenta.fileUploadApplication.S3Util:25 - Bucket does not exist
+2020-02-20 17:48:23 INFO  com.auxenta.fileUploadApplication.S3Util:23 - 20200:UPLOADED

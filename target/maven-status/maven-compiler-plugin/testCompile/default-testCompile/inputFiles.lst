@@ -1,1 +1,4 @@
 /mnt/c/AwsProjects/fileUploadApplication/src/test/java/com/auxenta/fileUploadApplication/AppTest.java
+/mnt/c/AwsProjects/fileUploadApplication/src/test/java/com/auxenta/fileUploadApplication/AwsClientTest.java
+/mnt/c/AwsProjects/fileUploadApplication/src/test/java/com/auxenta/fileUploadApplication/S3UtilTest.java
+/mnt/c/AwsProjects/fileUploadApplication/src/test/java/com/auxenta/fileUploadApplication/ValidationTest.java

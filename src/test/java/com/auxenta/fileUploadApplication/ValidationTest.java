@@ -13,36 +13,47 @@ class ValidationTest {
 
 	@Test
 	void test_checkInputsEmpty() {
-		assertTrue(Validation.checkInputsEmpty(""));
 		assertFalse(Validation.checkInputsEmpty("test"));
-		assertFalse(Validation.checkInputsEmpty(" "));
+		assertTrue(Validation.checkInputsEmpty(""));
+		assertTrue(Validation.checkInputsEmpty(" "));
+		assertTrue(Validation.checkInputsEmpty(null));
 	}
 
 	@Test
-	void test_checkIsFile() {
-		assertTrue(Validation.checkIsFile(sourcefile));
+	void test_checkIsFile() throws FileNotFoundException {
 		assertFalse(Validation.checkIsFile(new File("")));
 		assertFalse(Validation.checkIsFile(new File("test")));
+		assertTrue(Validation.checkIsFile(sourcefile));
 	}
 
 	@Test
 	void test_checkAll() {
-		ArrayIndexOutOfBoundsException arrException = assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
+		Exception arrException = assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
 			Validation.checkAll(new String[] { "bucketName ", "sourcefile " });
 		});
-		assertEquals("You passed more than or less than three inputs. You must provide three inputs only",
+		assertEquals("\nYou passed more than or less than three inputs. You can provide three inputs only \n Such as ..... \n 1. Aws S3 Bucket Name \n 2. Key - File name -- You want to upload in Aws S3 Bucket. \n 3. Correct file path -- Which is the file you want to upload from your PC",
 				arrException.getMessage());
+		assertNotEquals("test",arrException.getMessage());
 
-		NullPointerException nullException = assertThrows(NullPointerException.class, () -> {
+		Exception nullException = assertThrows(NullPointerException.class, () -> {
 			Validation.checkAll(new String[] { "", "", "" });
 		});
-		assertEquals("You passed empty values. Please check your all three values are valid or not",
+		assertEquals("\nYou passed empty bucket Name. Please provide valid Bucket Name.",
 				nullException.getMessage());
+		assertNotEquals("test",nullException.getMessage());
+		
+		Exception nullException1 = assertThrows(NullPointerException.class, () -> {
+			Validation.checkAll(new String[] { "nbs-training", "", "Documets/Aws.docx" });
+		});
+		assertEquals("\nYou passed empty key Name. Please provide valid key Name . Where you want to upload file in Aws Bucket",
+				nullException1.getMessage());
+		assertNotEquals("test",nullException1.getMessage());
 
-		FileNotFoundException fileException = assertThrows(FileNotFoundException.class, () -> {
+		Exception fileException = assertThrows(FileNotFoundException.class, () -> {
 			Validation.checkAll(new String[] { "nbs-training", "Documets/Aws.docx", "test" });
 		});
-		assertEquals("There is no file in that location. Please check your filepath", fileException.getMessage());
+		assertEquals("\nYour file does not exists. Please check your filepath", fileException.getMessage());
+		assertNotEquals("test", fileException.getMessage());
 	}
 
 }

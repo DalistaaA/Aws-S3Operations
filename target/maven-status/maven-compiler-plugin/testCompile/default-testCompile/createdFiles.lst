@@ -1,1 +1,4 @@
+com/auxenta/fileUploadApplication/AwsClientTest.class
 com/auxenta/fileUploadApplication/AppTest.class
+com/auxenta/fileUploadApplication/S3UtilTest.class
+com/auxenta/fileUploadApplication/ValidationTest.class

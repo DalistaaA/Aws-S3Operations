@@ -1,4 +1,7 @@
-com/auxenta/fileUploadApplication/UserInput.class
-com/auxenta/fileUploadApplication/Validation.class
+com/auxenta/fileUploadApplication/exception/BucketDoesNotExistException.class
+com/auxenta/fileUploadApplication/AwsClient.class
+com/auxenta/fileUploadApplication/S3Request.class
 com/auxenta/fileUploadApplication/S3Util.class
 com/auxenta/fileUploadApplication/App.class
+com/auxenta/fileUploadApplication/Validation.class
+com/auxenta/fileUploadApplication/S3Response.class

@@ -2,34 +2,33 @@ package com.auxenta.fileUploadApplication;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.commons.lang3.StringUtils;
 
 public class Validation {
 
-	private static final Logger logger = LogManager.getLogger(Validation.class);
-	
 	public static boolean checkInputsEmpty(String args) {
-		return args.isEmpty();
+		return StringUtils.isBlank(args);
 	}
-	
-	public static boolean checkIsFile(File file) {
+
+	public static boolean checkIsFile(File file) throws FileNotFoundException {
 		return file.isFile();
 	}
-	
-	public static void checkAll(String args[]) throws FileNotFoundException {
-		if(args.length!=3) {
-			logger.error("You passed more than or less than three inputs. You must provide three inputs only");
-			throw new ArrayIndexOutOfBoundsException("You passed more than or less than three inputs. You must provide three inputs only");
-		}else if(checkInputsEmpty(args[0]) && checkInputsEmpty(args[1]) && checkInputsEmpty(args[2])) {
-			logger.error("You passed empty values. Please check your all three values are valid or not");
-			throw new NullPointerException("You passed empty values. Please check your all three values are valid or not");
+
+	public static void checkAll(String args[]) throws IOException {
+		if (args.length != 3) {
+			throw new ArrayIndexOutOfBoundsException(
+					"\nYou passed more than or less than three inputs. You can provide three inputs only \n Such as ..... \n 1. Aws S3 Bucket Name \n 2. Key - File name -- You want to upload in Aws S3 Bucket. \n 3. Correct file path -- Which is the file you want to upload from your PC");
+		}else if(checkInputsEmpty(args[0])) {
+			throw new NullPointerException(
+					"\nYou passed empty bucket Name. Please provide valid Bucket Name.");
+		}else if(checkInputsEmpty(args[1])) {
+			throw new NullPointerException(
+					"\nYou passed empty key Name. Please provide valid key Name . Where you want to upload file in Aws Bucket");
 		}else if (!checkIsFile(new File(args[2]))) {
-			logger.error("There is no file in that location. Please check your filepath");
-			throw new FileNotFoundException("There is no file in that location. Please check your filepath");
+			throw new FileNotFoundException("\nYour file does not exists. Please check your filepath");
 		}
 	}
-	
-	
+
 }

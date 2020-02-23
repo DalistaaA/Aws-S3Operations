@@ -1,4 +1,7 @@
+/mnt/c/AwsProjects/fileUploadApplication/src/main/java/com/auxenta/fileUploadApplication/S3Response.java
 /mnt/c/AwsProjects/fileUploadApplication/src/main/java/com/auxenta/fileUploadApplication/App.java
+/mnt/c/AwsProjects/fileUploadApplication/src/main/java/com/auxenta/fileUploadApplication/AwsClient.java
+/mnt/c/AwsProjects/fileUploadApplication/src/main/java/com/auxenta/fileUploadApplication/S3Request.java
+/mnt/c/AwsProjects/fileUploadApplication/src/main/java/com/auxenta/fileUploadApplication/exception/BucketDoesNotExistException.java
 /mnt/c/AwsProjects/fileUploadApplication/src/main/java/com/auxenta/fileUploadApplication/Validation.java
-/mnt/c/AwsProjects/fileUploadApplication/src/main/java/com/auxenta/fileUploadApplication/UserInput.java
 /mnt/c/AwsProjects/fileUploadApplication/src/main/java/com/auxenta/fileUploadApplication/S3Util.java
